@@ -1,14 +1,15 @@
-var word = "butelek";
-var count = 99
-while(count > 0){
-    console.log(count + " " + word + " piwa na ścianie");
-    console.log(count + " " + word + " piwa,");
-    console.log("Jedną weź i podaj w koło,");
-    count = count - 1;
-    if(count > 0){
-        console.log(count + " " + word + " piwa na ścianie.");
-    }
-    else {
-        console.log("Nie ma już " + word + " piwa na ścianie.");
-    }
+var location1 = 3;
+var location2 = 4;
+var location3 = 5;
+
+var guess;
+var hits = 0;
+var guesses = 0;
+
+var isSunk = false;
+
+
+while(isSunk == false){
+
+    guess = prompt("Gotów, cel, pal! (Podaj liczbę z zakresu od 0-6):");
 }
