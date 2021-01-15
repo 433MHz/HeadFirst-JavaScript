@@ -1,39 +1,14 @@
+var zmiennaGlobalna = 1;
 
 
-var location1 = Math.floor(Math.random() * 5);
-var location2 = location1 + 1;
-var location3 = location2 + 1;
-
-var guess;
-var hits = 0;
-var guesses = 0;
-
-var isSunk = false;
-
-
-while(isSunk == false){
-    guess = prompt("Gotów, cel, pal! (Podaj liczbę z zakresu od 0-6):");
-
-    if(guess < 0 || guess > 6){
-        alert("Proszę podać prawidłowy numer komórki!");
-    }
-    else{
-        guesses = guesses + 1;
-
-        if(guess == location1 || guess == location2 || guess == location3){
-            hits = hits + 1; 
-            alert("Trafionty!");
-
-            if(hits == 3){
-                isSunk = true;
-                alert("Zatopiłeś mój okręt!");
-            }
-        }
-        else{
-            alert("Pudło!");
-        }
-    }
+function funkcja(parametr1, parametr2){
+    var zmiennaLokalna;
+    zmiennaLokalna = parametr1 + parametr2;
+    return zmiennaLokalna;
 }
 
-var stats = "Potrzebowałeś " + guesses + " prób, by zatopić okręt, " + "czyli Twoja efektywność wynosi: " + (3/guesses) + ".";
-alert(stats);
+argument1 = 5;
+argument2 = 10;
+
+zmiennaGlobalna = funkcja(argument1, argument2);
+console.log(zmiennaGlobalna);
