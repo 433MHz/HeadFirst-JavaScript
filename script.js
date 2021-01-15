@@ -1,14 +1,9 @@
-function makePhrases(){
-    var words1 = ["nieprzerwane", "wielowarstwowe","tysiącmetrowe","biznesowe","niepowstrzymane"];
-    var words2 = ["wspomagane","wartościowe","zorientowane","skoncentrowane","wyrównane"];
-    var words3 = ["procesy","rozwiązania","punkty","strategie","wizje"];
 
-    var rand1 = Math.floor(Math.random() * words1.length);
-    var rand2 = Math.floor(Math.random() * words2.length);
-    var rand3 = Math.floor(Math.random() * words3.length);
 
-    var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3];
-    alert(phrase);
+var scores = [60, 50, 60, 58,54,54,58,50,52,54,48,69,34,55,51,52,44,51,69,64,66,55,52,61,46,31,57,52,44,18,41,53,55,61,51,44];
+var output;
+
+for(var i = 0; i < scores.length; i++){
+    output = "Płyn do baniek numer: " + i + " wynik: " + scores[i];
+    console.log(output);
 }
-
-makePhrases();
