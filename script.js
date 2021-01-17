@@ -1,8 +1,5 @@
 
-var access = document.getElementById("code9");
 
-console.log(access);
+var blueplanet = document.getElementById("blueplanet");
+blueplanet.innerHTML = "Jest niedobrzeeee";
 
-var code = access.innerHTML;
-
-console.log(code);
