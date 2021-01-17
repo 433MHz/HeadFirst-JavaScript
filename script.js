@@ -1,8 +1,9 @@
 
 
 function change(){
-var blueplanet = document.getElementById("blueplanet");
-blueplanet.innerHTML = "Jest niedobrzeeee";
+var redplanet = document.getElementById("redplanet");
+redplanet.innerHTML = "Jest niedobrzeeee";
+redplanet.setAttribute("class", "redtext");
 }
 
 
