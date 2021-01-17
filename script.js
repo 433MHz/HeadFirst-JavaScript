@@ -5,17 +5,12 @@ var taxi = {
     color: "żółty",
     passengers: 4,
     convertible: false,
-    mileage: 281341
+    mileage: 281341,
+    show: function(){
+        console.log("Car brand is " + this.make + " model is " + this.model + " color is " + this.color + " year is " + this.year);  
+    }
 };
 
-console.log(taxi.color);
-
-function prequal(car){
-    car.color = "fioletowy";
-}
-
-prequal(taxi);
 
 
-console.log(taxi.color);
-
+taxi.show();
