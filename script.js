@@ -6,11 +6,23 @@ var taxi = {
     passengers: 4,
     convertible: false,
     mileage: 281341,
-    show: function(){
-        console.log("Car brand is " + this.make + " model is " + this.model + " color is " + this.color + " year is " + this.year);  
+    isRunning: false,
+    turnOn: function(){
+        this.isRunning = true;
+    },
+    turnOff: function(){
+        this.isRunning = false;
+    },
+    drive: function(){
+        if(this.isRunning){
+            alert("Wrruuum");
+        }
+        else{
+            alert("First you need to turn on car");
+        }
     }
 };
 
 
-
-taxi.show();
+taxi.turnOn();
+taxi.drive();
