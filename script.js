@@ -8,20 +8,14 @@ var taxi = {
     mileage: 281341
 };
 
+console.log(taxi.color);
 
 function prequal(car){
-    if(car.mileage > 10000){
-        return false
-    }else if(car.year > 1960){
-        return false;
-    }
-    return true;
+    car.color = "fioletowy";
 }
 
-var worthALook = prequal(taxi);
+prequal(taxi);
 
-if(worthALook){
-    console.log("Car " + taxi.make + " is a good car");
-}else{
-    console.log(taxi.make + " is a crap");
-}
+
+console.log(taxi.color);
+
