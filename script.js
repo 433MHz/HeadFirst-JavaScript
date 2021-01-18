@@ -1,19 +1,23 @@
-var test1 = "abcdef";
-var test2 = 123;
-var test3 = true;
-var test4 = {};
-var test5 = [];
-var test6;
-var test7 = {"abcdef": 123};
-var test8 = ["abcdef", 123];
-function test9() {return "abcdef"};
+var test1_1 = "42" == 42;
+var test1_2 = "42" === 42;
 
-console.log(typeof test1);
-console.log(typeof test2);
-console.log(typeof test3);
-console.log(typeof test4);
-console.log(typeof test5);
-console.log(typeof test6);
-console.log(typeof test7);
-console.log(typeof test8);
-console.log(typeof test9);
+var test2_1 = "0" == 0;
+var test2_2 = "0" === 0;
+
+var test3_1 = "0" == false;
+var test3_2 = "0" === false;
+
+var test4_1 = "true" == true;
+var test4_2 = "true" === true;
+
+console.log(test1_1);
+console.log(test1_2);
+
+console.log(test2_1);
+console.log(test2_2);
+
+console.log(test3_1);
+console.log(test3_2);
+
+console.log(test4_1);
+console.log(test4_2);
